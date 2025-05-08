@@ -222,3 +222,74 @@ body {
   margin-top: 20px;
   font-family: Arial, sans-serif;
 }
+
+/* Responsive Table Handling */
+@media only screen and (max-width: 1024px) {
+  .detail-box {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .detail-box table {
+    width: 100%;
+    min-width: 600px; /* Ensures readability on small devices */
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .detail-box th,
+  .detail-box td {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+
+/* Phone devices */
+@media only screen and (max-width: 600px) {
+  .detail-box table {
+    min-width: 500px;
+  }
+
+  .detail-box th,
+  .detail-box td {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  #credit-summary-heading {
+    font-size: 20px;
+  }
+}
+
+/* Small tablets and landscape phones */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .detail-box table {
+    min-width: 600px;
+  }
+
+  .detail-box th,
+  .detail-box td {
+    font-size: 13px;
+  }
+
+  #credit-summary-heading {
+    font-size: 22px;
+  }
+}
+
+/* Medium tablets (like iPad portrait) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .detail-box table {
+    min-width: 650px;
+  }
+
+  .detail-box th,
+  .detail-box td {
+    font-size: 14px;
+  }
+
+  #credit-summary-heading {
+    font-size: 26px;
+  }
+}

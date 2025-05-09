@@ -96,9 +96,20 @@ body {
   fill: none;
   stroke-width: 8;
   stroke-dasharray: 314;
-  stroke-dashoffset: 200;
+  stroke-dashoffset: 314; /* Initial value (empty circle) */
   stroke-linecap: round;
+  animation: progress 2s ease-out forwards;
 }
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 314; /* Start fully hidden */
+  }
+  to {
+    stroke-dashoffset: 200.7; /* 45% filled for 450/1000 score */
+  }
+}
+
 
 .score-text {
   position: absolute;

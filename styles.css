@@ -194,7 +194,7 @@ body {
   overflow-x: auto;
 }
 
-.detail-box table {
+/* .detail-box table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
@@ -202,6 +202,20 @@ body {
 
 .detail-box th,
 .detail-box td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+} */
+.detail-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.detail-box table th,
+.detail-box table td {
   border: 1px solid #ccc;
   padding: 8px 12px;
   text-align: left;
@@ -236,15 +250,26 @@ body {
   margin-right: auto;
 }
 
+.mini-table {
+  width: 350px;
+  margin: 15px auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
 
+.mini-table th,
+.mini-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap;
+}
 
-
-
-
-
-
-
-
+.mini-table th {
+  font-weight: bold;
+  background-color: transparent; /* Remove background color */
+}
 
 
 

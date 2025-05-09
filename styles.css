@@ -183,8 +183,9 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .detail-box {
-  max-width: 1400px; /* or your desired width */
+  max-width: 1400px;
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;
@@ -194,7 +195,7 @@ body {
 }
 
 .detail-box table {
-  width: 100%;            /* Ensures table fills the .detail-box */
+  width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
@@ -208,7 +209,7 @@ body {
   white-space: nowrap;
 }
 
-.detail-box h2, 
+.detail-box h2,
 .detail-box h3 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -222,6 +223,45 @@ body {
   margin-top: 20px;
   font-family: Arial, sans-serif;
 }
+
+.credit-graph {
+  width: 930px;     /* or adjust to 100% for responsive layout */
+  height: auto;     /* maintains aspect ratio */
+  max-height: 370px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Table Handling */
 @media only screen and (max-width: 1024px) {

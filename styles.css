@@ -194,7 +194,7 @@ body {
   overflow-x: auto;
 }
 
-/* .detail-box table {
+.detail-box table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
@@ -207,20 +207,11 @@ body {
   text-align: left;
   font-size: 14px;
   white-space: nowrap;
-} */
+}
 .detail-box table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-}
-
-.detail-box table th,
-.detail-box table td {
-  border: 1px solid #ccc;
-  padding: 8px 12px;
-  text-align: left;
-  font-size: 14px;
-  white-space: nowrap;
 }
 
 .detail-box h2,
@@ -250,7 +241,7 @@ body {
   margin-right: auto;
 }
 
-.mini-table {
+/* .mini-table {
   width: 350px;
   margin: 15px auto;
   border-collapse: collapse;
@@ -268,17 +259,34 @@ body {
 
 .mini-table th {
   font-weight: bold;
-  background-color: transparent; /* Remove background color */
+  background-color: transparent; /* Remove background color 
+} */
+
+/* Apply consistent spacing between all tables */
+table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin: 20px 0; /* space between tables */
+  font-size: 14px;
 }
 
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  white-space: nowrap;
+  text-align: left;
+}
 
+/* Wide tables: 100% width */
+table.wide-table {
+  width: 100%;
+}
 
-
-
-
-
-
-
+/* Narrow tables: 60% width, left-aligned */
+table.narrow-table {
+  width: 60%;
+  min-width: 400px;
+}
 
 
 
